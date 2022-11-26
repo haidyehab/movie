@@ -1,0 +1,12 @@
+
+    <div class="row py-5">
+        
+        <div class="col-md-3 image">
+            <img class="w-100" [src]="imgPrefix+peopleDetails.profile_path " alt="">
+        </div>
+        <div class="col-md-8 my-5">
+        <h2><span>Name:</span>{{peopleDetails.name}}</h2>
+        <h2> <span>popularity:</span>{{peopleDetails.popularity}}</h2>
+        <h2><span>place_of_birth:</span>{{peopleDetails.place_of_birth}}</h2>
+        <p *ngIf="peopleDetails.biography"><span>biography:</span>{{peopleDetails.biography }}</p>
+        </div>

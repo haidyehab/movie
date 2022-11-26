@@ -1,0 +1,28 @@
+<div class="p-5 d-flex justify-content-center">
+    <nav aria-label="...">
+        <ul class="pagination pagination-sm">
+          <li *ngFor="let page of pages" (click)="test(page)" class="page-item"><a class="page-link">{{page}}</a></li>
+         
+        </ul>
+      </nav>
+</div>
+
+<div class="row py-5 d-flex justify-content-center">
+    <div class="p-3">
+        <input type="text" [(ngModel)]="term" class="form-control" placeholder="search by title">
+    </div>   
+    
+<div *ngFor="let people of trendingPeoplePopular|searchpeopel:term" class="col-md-2">
+    <div class="people">
+       <a [routerLink]="['/peopledetails',people.id]">
+        <div class="box">
+            <img class="w-100" [src]="people.profile_path" alt="">
+            <div class="content"></div>
+        </div>
+        <h3 class="h6 mb-3">{{people.name}}</h3>
+       </a>
+    </div>
+</div>
+</div>
+
+

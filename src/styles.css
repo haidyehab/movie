@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+body{
+    background-color: #131722;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #fff;
+}
+a,a:hover{
+    color:#fff !important ;
+}
+.brdr{
+    height:1px;
+    background-color: #a8a8a83d;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pagination a{
+    color: blue !important;
+    background-color: transparent;
+}
+.stars{
+    color: gold;
+    font-size:1.7rem;
+    padding:1rem 5rem;
+}
+.play{
+    padding: .6rem 3.5rem;
+}
+.out{
+    cursor: pointer;
+}
+
+
+.box{
+    position: relative;
+    overflow:hidden ;
+    
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+}
+.box .content{
+    position: absolute;
+    top:-100%;
+    left: 0;
+    background-color:rgba(0, 0, 0,.5);
+    height: 100%;
+    width: 100%;
+}
+.box:hover .content{
+  top: 0;
+}
+
+.box:hover img{
+    transform:scale(1.2);
+}
+
+

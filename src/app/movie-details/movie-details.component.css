@@ -1,0 +1,16 @@
+.image{
+    transition: all 1s;
+}
+
+.image:hover{
+    transform: scale(.7);
+}
+
+ul li span{
+    color: blue;
+    font-size: 2rem;
+    
+}
+ul li{
+cursor: pointer;
+}

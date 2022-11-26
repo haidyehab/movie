@@ -1,0 +1,28 @@
+
+<div class="row py-5">
+    <div class="col-md-3 image">
+        <img class="w-100" [src]="imgPrefix+tvDetails.poster_path" alt="">
+    </div>
+    <div class="col-md-8">
+    <h2>{{tvDetails.name}}</h2>
+    <p>{{tvDetails.overview}}</p>
+    <ul>
+        <li><span>popularity :</span>  {{tvDetails.popularity}}</li>
+        <li><span>vote :</span>  {{tvDetails.vote_average}}</li>
+        <li><span>vote_count :</span>  {{tvDetails.vote_count}}</li>
+        <li><span>last_air_date :</span>  {{tvDetails.last_air_date}}</li>
+        
+    </ul>
+    <div class="mt-5">
+        <button class="btn btn-primary btn-lg mx-4 play">play</button>
+        <button class="btn btn-outline-light btn-lg">watch trailer</button>
+    </div>
+    </div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>`
+      </div>
+    </div>

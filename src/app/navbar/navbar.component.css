@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #131722 !important;
+}
+.social-icons i{
+    margin: 0 10px;
+}
+.out{
+    color: #fff;
+}
+.out:hover{
+    color: blue;
+}
+
+.nav-item a:hover{
+  color: blue !important;
+}
